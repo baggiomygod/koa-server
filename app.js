@@ -20,6 +20,6 @@ app.use(bodyParser());
 
 app.use(controllers());
 
-app.use(router.routes());
+// app.use(router.routes());
 app.listen(3000);
 console.log('app started at port 3000.');

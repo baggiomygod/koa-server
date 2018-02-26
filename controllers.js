@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 // router.get().router.post
 function addMapping(router, mapping) {
     for (let url in mapping) {
