@@ -21,5 +21,9 @@
         "koa-bodyparser": "^4.2.0",
         "koa-cors": "0.0.16",
         "koa-router": "^7.3.0"
+    },
+    "devDependencies": {
+        "co": "^4.6.0",
+        "koa-socket": "^4.4.0"
     }
 }

@@ -2,6 +2,9 @@
 const Koa = require('koa');
 const fs = require('fs');
 const cors = require('koa-cors'); // CORS跨域
+// const IO = require('koa-socket');
+// const co = require('co');
+const nodeSocket = require('./src/controllers/socket/socket');
 // 解析post请求的request.body
 const bodyParser = require('koa-bodyparser');
 const controllers = require('./controllers');
@@ -18,8 +21,12 @@ app.use(async (ctx, next) => {
 // 注册bodyParse在注册router.get(),router.post()之前，否则无法解析body
 app.use(bodyParser());
 
+// 接口
 app.use(controllers());
 
-// app.use(router.routes());
+// websocket
+nodeSocket(app);
+// app.use(nodeSocket(app));
+
 app.listen(3000);
 console.log('app started at port 3000.');
