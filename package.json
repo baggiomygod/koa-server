@@ -20,10 +20,11 @@
         "koa": "2.4.1",
         "koa-bodyparser": "^4.2.0",
         "koa-cors": "0.0.16",
-        "koa-router": "^7.3.0"
+        "koa-router": "^7.3.0",
+        "mime": "^2.2.0",
+        "mz": "^2.7.0",
+        "nunjucks": "^3.1.2",
+        "ws": "^5.1.0"
     },
-    "devDependencies": {
-        "co": "^4.6.0",
-        "koa-socket": "^4.4.0"
-    }
+    "devDependencies": {}
 }

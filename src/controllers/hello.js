@@ -17,11 +17,11 @@ const getHello = async (ctx, next) => {
     let name = ctx.params.name;
     ctx.response.body = `<h1>hello, ${name}</h1>`;
 }
-const getIndex = async (ctx, next) => {
-    ctx.response.body = '<h1>index...</h1>';
-}
+// const getIndex = async (ctx, next) => {
+//     ctx.response.body = '<h1>index...</h1>';
+// }
 
 module.exports = {
     'GET /hello/:name': getHello,
-    'GET /': getIndex
+    // 'GET /': getIndex
 }
